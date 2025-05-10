@@ -37,7 +37,7 @@ def main():
         duration = round(time.time() - start_time, 2)
         logger.info(f"⏱ Ответ получен за {duration} сек.")
         logger.debug("📦 Ответ от API:")
-        logger.debug(json.dumps(response, indent=2, ensure_ascii=False))
+        # logger.debug(json.dumps(response, indent=2, ensure_ascii=False))
 
         users = parser.parse_users(response)
         logger.info(f"👤 Найдено пользователей: {len(users)}")
